@@ -1,120 +1,127 @@
-/* Styles généraux */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset des styles par défaut */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
 header {
-    background-color: #222;
+    background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #f4a261;
 }
 
-/* Sections */
 section {
-    padding: 80px 10%;
+    padding: 50px 20px;
     text-align: center;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 20px;
-    color: #222;
+    color: #333;
 }
 
-/* Portfolio */
 .project {
-    background: white;
+    display: inline-block;
+    width: 45%;
     margin: 20px;
     padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
+    transition: transform 0.3s;
 }
 
 .project img {
-    max-width: 100%;
-    border-radius: 10px;
-    height: auto;
+    width: 100%;
+    border-radius: 8px;
 }
 
-/* Formulaire */
+.project:hover {
+    transform: translateY(-10px);
+}
+
 form {
-    background: white;
-    padding: 30px;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
-    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea {
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
     background-color: #f4a261;
     color: white;
-    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 4px;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+form button:hover {
     background-color: #e76f51;
 }
 
-/* Footer */
 footer {
-    background-color: #222;
-    color: white;
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
 }
