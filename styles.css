@@ -6,53 +6,63 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;  /* Utilisation de la police Roboto pour un look moderne */
+    background-color: #f9f9f9;         /* Couleur de fond douce */
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1rem;
+    padding: 0 10px;
 }
 
 header {
-    background-color: #333;
+    background-color: #1e3a8a; /* Bleu profond */
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    border-bottom: 5px solid #f4a261;  /* Légère bordure orange pour un effet contrasté */
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Taille de texte plus grande pour le titre */
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #f4a261;
+    transform: scale(1.1);
 }
 
 section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
     color: #333;
 }
 
@@ -61,67 +71,91 @@ h2 {
     width: 45%;
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .project:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 40px auto;
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 12px 0 8px;
+    font-weight: 600;
+    color: #333;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+form textarea {
+    height: 150px;
 }
 
 form button {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     background-color: #f4a261;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1.2rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form button:hover {
     background-color: #e76f51;
+    transform: scale(1.05);
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #333;
     color: white;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e76f51;
 }
