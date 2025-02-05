@@ -137,6 +137,13 @@ form button:hover {
     transform: scale(1.05);
 }
 
+/* Suppression des puces et marges des listes */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
 footer {
     text-align: center;
     padding: 30px;
